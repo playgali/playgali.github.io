@@ -1,9 +1,7 @@
-name: build our image
-
+name: buildDocker
 on:
   push:
     branches: master
-
 jobs:
   build:
     runs-on: ubuntu-latest
