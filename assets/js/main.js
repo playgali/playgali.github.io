@@ -57,7 +57,7 @@
             css3: true,
             navigation: {
                 'position': 'right',
-                'tooltips': ['HOME', 'ABOUT ME']
+                'tooltips': ['HOME', 'EXPERIENCE']
             },
             normalScrollElements: null,
             normalScrollElementTouchThreshold: 5,
@@ -82,98 +82,7 @@
     tooltip();
 
     /*--------------------------------
-     04. Skills LineProgressbar
-     ----------------------------------*/
-    function skill_linux() {
-        $('#linux').LineProgressbar({
-            percentage: 100,
-            radius: '3px',
-            height: '10px',
-            duration: 6000,
-            backgroundColor: '#ddd'
-        });
-    }
-    skill_linux();
-
-    function skill_networking() {
-        $('#networking').LineProgressbar({
-            percentage: 100,
-            radius: '3px',
-            height: '10px',
-            duration: 6000,
-            backgroundColor: '#ddd'
-        });
-    }
-    skill_networking();
-
-    function skill_secops() {
-        $('#secops').LineProgressbar({
-            percentage: 90,
-            radius: '3px',
-            height: '10px',
-            duration: 6000,
-            backgroundColor: '#ddd'
-        });
-    }
-    skill_secops();
-
-    function skill_cloud() {
-        $('#cloud').LineProgressbar({
-            percentage: 95,
-            radius: '3px',
-            height: '10px',
-            duration: 6000,
-            backgroundColor: '#ddd'
-        });
-    }
-    skill_cloud();
-
-    function skill_cicd() {
-        $('#cicd').LineProgressbar({
-            percentage: 90,
-            radius: '3px',
-            height: '10px',
-            duration: 6000,
-            backgroundColor: '#ddd'
-        });
-    }
-    skill_cicd();
-
-    function skill_kubernetes() {
-        $('#kubernetes').LineProgressbar({
-            percentage: 90,
-            radius: '3px',
-            height: '10px',
-            duration: 6000,
-            backgroundColor: '#ddd'
-        });
-    }
-    skill_kubernetes();
-
-    function skill_serverless() {
-        $('#serverless').LineProgressbar({
-            percentage: 90,
-            radius: '3px',
-            height: '10px',
-            duration: 6000,
-            backgroundColor: '#ddd'
-        });
-    }
-    skill_serverless();
-
-    function skill_cdns() {
-        $('#cdns').LineProgressbar({
-            percentage: 85,
-            radius: '3px',
-            height: '10px',
-            duration: 6000,
-            backgroundColor: '#ddd'
-        });
-    }
-    skill_cdns();
-
-    /*--------------------------------
-     05. jQuery counterUp
+     04. jQuery counterUp
      ----------------------------------*/
     function counter_number() {
         $('.counter').countUp();
@@ -181,7 +90,7 @@
     counter_number();
 
     /*--------------------------------
-     06. Porfolio Isotope Filter
+     05. Porfolio Isotope Filter
      ----------------------------------*/
     $(window).on('load', function () {
         /* Porfolio Filter */
@@ -202,7 +111,7 @@
     });
 
     /*--------------------------------
-     7.1. Image Gallery Popup
+     6.1. Image Gallery Popup
      ----------------------------------*/
     function image_gallery() {
         $('.gallery-popup-btn').magnificPopup({
@@ -215,7 +124,7 @@
     image_gallery();
 
     /*--------------------------------
-     7.2. Youtube - Vimeo - SoundCloud Popup
+     6.2. Youtube - Vimeo - SoundCloud Popup
      ----------------------------------*/
     function video_soundcloud() {
         $('.magnific-youtube,.magnific-vimeo,.magnific-soundcloud').magnificPopup({
@@ -229,7 +138,7 @@
     video_soundcloud();
 
     /*--------------------------------
-     7.3. Porfolio Detail Popup
+     6.3. Porfolio Detail Popup
      ----------------------------------*/
     function porfolio_detail_popup() {
         $('.portfolio-detail-popup').magnificPopup({
@@ -244,7 +153,7 @@
     porfolio_detail_popup();
 
     /*--------------------------------
-     7.4. Blog Detail Popup
+     6.4. Blog Detail Popup
      ----------------------------------*/
     function blog_detail_popup() {
         $('.blog-detail-popup').magnificPopup({
