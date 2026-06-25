@@ -1,0 +1,24 @@
+name: buildDocker
+on:
+  push:
+    branches: master
+jobs:
+  buildDockerImage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
+      - name: install buildx
+        uses: docker/setup-buildx-action@v3
+      - name: login to docker hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+      - name: build the image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: playgali/landingpage:latest
+          platforms: linux/amd64,linux/arm/v7,linux/arm64
